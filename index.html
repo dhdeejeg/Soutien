@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrez de Nouveaux Sites</title>
+    <style>
+        /* Importation d'une police de caractères moderne depuis Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Styles de base */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Conteneur principal avec effet "verre dépoli" */
+        .main-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Pour la compatibilité avec Safari */
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Titre principal */
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraphe descriptif */
+        p {
+            font-size: 1.1em;
+            font-weight: 300;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Style du bouton d'action */
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Effet au survol du bouton */
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        /* --- Responsive Design --- */
+        /* Ajustements pour les écrans plus petits (mobiles) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Taille de police réduite pour le titre */
+            }
+            .main-container {
+                padding: 30px 20px; /* Moins de padding sur les côtés */
+            }
+            p {
+                font-size: 1em; /* Taille de police réduite pour le texte */
+            }
+            .cta-button {
+                padding: 12px 25px; /* Bouton légèrement plus petit */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Explorez le Web Autrement</h1>
+        <p>
+            Cliquez sur le bouton ci-dessous et regardez une courte publicité. C'est une excellente façon de nous soutenir tout en découvrant de nouveaux sites et services intéressants !
+        </p>
+        
+        <a href="#" class="cta-button">Découvrir un site</a>
+    </div>
+
+</body>
+</html>
